@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom & Jerry</title>
+
+    <style>
+           body{
+        background: linear-gradient(to bottom, #ff6b6b, #4d9ede);
+        height: 100vh;
+        margin: 0;
+}
+
+        
+        #tom{ width: 400px;
+              position: absolute;
+              top: 200px;
+              left: 200px;
+            animation: Tom_jerry 2s linear 0s infinite alternate;
+        }
+
+        #jerry{
+            width: 400px;
+            width: 400px;
+              position: absolute;
+              top: 200px;
+              left: 200px;
+            animation: Tom_jerry 2s linear 0s infinite alternate-reverse;
+           
+            
+        }
+
+
+        @keyframes Tom_jerry{
+            0%{
+                left:100px ;
+            }
+            70%{
+                filter: blur(5px);
+            }
+
+            100%{
+                left:1300px;
+            }
+
+
+
+
+        }        
+    
+    </style>
+</head>
+<body>
+        <img id="tom" src="tom.png" alt="">
+    
+    <img id="jerry" src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png" alt="">
+   
+    
+</body>
+</html>
